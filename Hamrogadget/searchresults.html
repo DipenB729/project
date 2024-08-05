@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Search Results</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Hamrogadget</h1>
+      <form action="searchresults.html" class="form" method="GET">
+        <input type="search" placeholder="Search" id="input" name="query" />
+        <button type="submit" id="search">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+        <div class="icon">
+          <a href="addtocart.html" id="icn"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="index2.html" id="icn"><i class="fa-regular fa-user"></i></a>
+          <a href="addtosell.html" id="sell">Add to sell</a>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+        <ul class="submenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#">iPad & Tab</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">Wearable</a></li>
+            <li><a href="#">Headphone & Speaker</a></li>
+            <li><a href="#">Camera</a></li>
+            <li><a href="#">Video Games</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="compare.html">Compare Product</a></li>
+        </ul>
+    </div>
+    <div class="container2">
+      <!-- <h1>Search Results</h1> -->
+      <div class="boxes" id="search-results"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>GadgetByte</h1>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GadgetByte. All rights reserved.</p>
+        </div>
+    </footer>
+  
+    <script src="script.js"></script>
+  </body>
+</html>

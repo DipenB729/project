@@ -1,0 +1,168 @@
+/* Add general styles for body and other elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Background color for the whole page */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .navbar h1 {
+    display: inline;
+  }
+  
+  .navbar .form {
+    display: inline;
+    float: right;
+  }
+  
+  .navbar .form input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .navbar .form button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Submenu styles */
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #444;
+  }
+  
+  .submenu li {
+    margin: 0;
+  }
+  
+  .submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Search results styles */
+  .container2 {
+    padding: 20px;
+    margin-bottom: 30px;
+
+  }
+  
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .box1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .box1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .box1 h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .box1 p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .box1 a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .box1 a:hover {
+    background-color: #218838;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin: 10px 0;
+}
+
+.footer-socials a {
+    color: #f1f1f1;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Compare two products">
+    <link rel="stylesheet" href="compare.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Product Comparison</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><h1>Hamrogadget</h1></a>
+        <form action="searchresults.html" class="form" method="GET">
+          <input type="search" placeholder="Search" id="input" name="query" />
+          <button type="submit" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+          <div class="icon">
+            <a href="addtocart.html" id="icn"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="index2.html" id="icn"><i class="fa-regular fa-user"></i></a>
+            <a href="addtosell.html" id="sell">Add to sell</a>
+          </div>
+        </form>
+      </div>
+    <div class="container">
+        <h1 class="text-center">Compare Two Products</h1>
+        <div class="form-group">
+            <label for="select1">Select Product 1:</label>
+            <select id="select1" class="form-control">
+                <option value="0">Samsung22</option>
+                <option value="2">canon</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="select2">Select Product 2:</label>
+            <select id="select2" class="form-control">
+                <option value="1">samsunga52</option>
+                <option value="3">nikkle</option>
+               
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Product 1</th>
+                    <th>Product 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Product Image</th>
+                    <td><img id="img1" src="airbud.jpeg" alt="Product 1"></td>
+                    <td><img id="img2" src="airbud.jpeg" alt="Product 2"></td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">Npr 0</td>
+                    <td id="price2">Npr 0</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">Description for Product 1</td>
+                    <td id="desc2">Description for Product 2</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">Brand 1</td>
+                    <td id="brand2">Brand 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>GadgetByte</h1>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GadgetByte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="compare.js"></script>
+</body>
+</html>

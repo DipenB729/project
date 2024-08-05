@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="addtosell.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Add to Sell - Hamrogadget</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><h1>Hamrogadget</h1></a>
+        <!-- <form action="searchresults.html" class="form" method="GET"> -->
+          <input type="search" placeholder="Search" id="input" name="query" />
+          <button type="submit" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+          <div class="icon">
+            <a href="addtocart.html" id="icn"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="index2.html" id="icn"><i class="fa-regular fa-user"></i></a>
+            <a href="addtosell.html" id="sell">Add to sell</a>
+          </div>
+        
+      </div>
+      <div class="container">
+        <ul class="submenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Phones</a></li>
+          <li><a href="">ipad &tab</a></li>
+          <li><a href="">mac</a></li>
+          <li><a href="">wearable</a></li>
+          <li><a href="">headphone & speaker</a></li>
+          <li><a href="">camera</a></li>
+          <li><a href="">video games</a></li>
+          <li><a href="">offers</a></li>
+          <li><a href="compare.html">Compare Product</a></li>
+        </ul>
+      </div>
+
+    <div class="add-to-sell-container">
+        <h1>Add Your Item for Sale</h1>
+        <form id="sellForm">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" required />
+            
+            <label for="itemDescription">Description:</label>
+            <textarea id="itemDescription" name="itemDescription" required></textarea>
+            
+            <label for="itemPrice">Price (Rs):</label>
+            <input type="number" id="itemPrice" name="itemPrice" required />
+            
+            <label for="itemImage">Image:</label>
+            <input type="file" id="itemImage" name="itemImage" accept="image/*" required />
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Display Submitted Item -->
+        <div id="itemDisplay" class="item-display" style="display:none;">
+            <h2>Item Details</h2>
+            <div id="displayArea">
+                <!-- Submitted item will be displayed here -->
+            </div>
+            <button id="editButton" style="display:none;">Edit Item</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>GadgetByte</h1>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GadgetByte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="addtosell.js"></script>
+</body>
+</html>
