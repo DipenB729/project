@@ -51,28 +51,8 @@
       <button><a href="#newarrival">shop now</a></button>
     </section>
     <hr />
-    <br /><br />
-    <div class="top_selling_product">
-      <h1>Top Selling Product</h1>
-      <div class="see_all">
-        <i class="fa-solid fa-plus"></i>
-        <h2>see all</h2>
-      </div>
-    </div>
-    <div class="boxes">
-      <div class="box1">
-        <a href="#" id="addtocart"> <p>Add to Cart</p></a>
-      </div>
-    </div>
-    
-    <br /><br /><br />
-    <br /><br />
-    
-  </div>
-</div>
-<br />
-<br />
-</div>
+
+
 
 <?php include 'home.php'; ?>
 
