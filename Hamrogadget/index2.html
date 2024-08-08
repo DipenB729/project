@@ -3,76 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style2.css" />
-    <title>Login Page | Coding Vibess</title>
+    <title>online_voting_system</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <style>
+      body {
+        background-color: white;
+      }
+      #headersection h1 {
+        font-family: "Times New Roman", Times, serif;
+        padding: 5px;
+      }
+
+      input {
+        font-family: "Times New Roman", Times, serif;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #dropbox {
+        font-family: "Times New Roman", Times, serif;
+        padding: 15px;
+        border-radius: 5px;
+        width: 17%;
+        font-size: 15px;
+      }
+      #loginbutton {
+        font-family: "Times New Roman", Times, serif;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(71, 71, 157);
+        font-size: 15px;
+      }
+    </style>
   </head>
-
   <body>
-    <header>
-    <div class="container" id="container">
-      <div class="form-container sign-up">
-        <form>
-          <h1>Create Account</h1>
-          <div class="social-icons">
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </div>
-          <span>or use your email for registeration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+    <center>
+      <div class="headersection">
+        <h1>
+          <b><a href="../Hamrogadget/index.php"></a>Hamrogadget</b>
+        </h1>
+        <hr />
+      </div>
+      <div class="bodysection">
+        <form action="../Hamrogadget/api/login.php" method="POST">
+          <h3>Login</h3>
+          <hr />
+          <input
+            type="number"
+            name="phone"
+            required
+            placeholder="Enter mobile"
+          /><br /><br />
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Enter password"
+            <br
+          />
+          <br /><br />
+          <br />
+          <button id="loginbtn" type="submit">Login</button><br /><br />
+          New user?<a href="../Hamrogadget/registration.html">Register Here</a>
         </form>
       </div>
-      <div class="form-container sign-in">
-        <form>
-          <h1>Sign In</h1>
-          <div class="social-icons">
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </div>
-          <span>or use your email password</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forget Your Password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="toggle-container">
-        <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1>Welcome Back!</h1>
-            <p>Enter your personal details to use all of site features</p>
-            <button class="hidden" id="login">Sign In</button>
-          </div>
-          <div class="toggle-panel toggle-right">
-            <h1>Hello, Dear!</h1>
-            <p>
-              Register with your personal details to use all of site features
-            </p>
-            <button class="hidden" id="register"> <a href="registration.html">Sign Up</a></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-    <script src="script.js"></script>
+    </center>
   </body>
 </html>

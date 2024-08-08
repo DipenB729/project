@@ -64,6 +64,7 @@ function delElement(a) {
 }
 
 function displaycart() {
+  return;
   let j = 0,
     total = 0;
   document.getElementById("count").innerHTML = cart.length;
