@@ -41,6 +41,7 @@
         <li><a href="compare.html">Compare Product</a></li>
       </ul>
     </div>
+    <?php include 'show_items_in_cart.php';?>
     
     <!-- <div class="header">
       <p class="logo">Hamrogadget</p>
