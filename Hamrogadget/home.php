@@ -64,7 +64,8 @@ echo "<style>
         echo "<h2>" . $row["name"] . "</h2>";
         echo "<p>" . $row["description"] . "</p>";
         echo "<p>Price: Rs" . $row["price"] . "</p>";
-        echo "<p><a href='add_to_cart.php?item_id={$row["name"]}'>Add to Cart</a></p></a>";
+        $item_type = "first";
+        echo "<p><a href='add_to_cart.php?item_id={$row["name"]}&item_type={$item_type}'>Add to Cart</a></p></a>";
         echo "</div>";
         echo "</div><BR>";
     }
