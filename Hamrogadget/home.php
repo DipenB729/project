@@ -26,6 +26,36 @@ if ($result->num_rows > 0) {
       </div>
     </div>
 */
+echo "<style>
+.prod_in{
+ font-size: 8px;
+ font-weight: 700;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-style: none;
+ height: 310px;
+ width: 220px;
+ font-family: sans-serif;
+ }git remote -v
+ p{
+   font-size: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-family: sans-serif;
+   font-weight: 600;
+   color: rgb(8, 8, 8);
+   }
+#addtocart p{
+    width: 130px;
+    text-align: center;
+    margin-left: 48px;
+    padding-top: 12px;
+    font-style: italic;
+    height: 40px;
+    background-color: rgba(228, 76, 16, 0.151);
+}
+   
+
+</style>";
 
     while($row = $result->fetch_assoc()) {
         echo "<div class='prod_out'>";
