@@ -6,7 +6,43 @@
       src="https://kit.fontawesome.com/92d70a2fd8.js"
       crossorigin="anonymous"
     ></script>
-  </head>
+    <style>
+ .product-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Ensure even distribution across the row */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust based on your layout needs */
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% of the row minus the gap */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.product-item img {
+    max-width: 100%; /* Image fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+</style>
+ </head>
   <body>
 
     <div class="navbar">
@@ -50,7 +86,7 @@
         <p id="count">0</p>
       </div>
     </div> -->
-    <div class="container1">
+    <!-- <div class="container1">
       <div id="root"></div>
       <div class="sidebar">
         <div class="head"><p>My Cart</p></div>
@@ -60,7 +96,7 @@
           <h2 id="total">Rs 0.00</h2>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <footer>
