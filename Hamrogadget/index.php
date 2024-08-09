@@ -10,36 +10,75 @@
     />
     <title>Hamrogadget</title>
     <style>
-.prod_in{
- font-size: 8px;
- font-weight: 700;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- border-style: none;
- height: 310px;
- width: 220px;
- font-family: sans-serif;
- }
- p{
-   font-size: 10px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   font-family: sans-serif;
-   font-weight: 600;
-   color: rgb(8, 8, 8);
-   }
-#addtocart p{
-    width: 130px;
-    text-align: center;
-    margin-left: 48px;
-    padding-top: 12px;
-    font-style: italic;
-    height: 40px;
-    background-color: rgba(228, 76, 16, 0.151);
+/* Style for the container holding all the product boxes */
+.container1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Adds space between the boxes */
+    justify-content: center; /* Centers items horizontally within the container */
 }
-   .prod_out{
-   display:flex;
-   flex-direction:row;
-   }
+
+/* Style for each product box */
+.prod_out {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    box-sizing: border-box;
+}
+
+/* Style for the content inside each product box */
+.prod_in {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Style for images to fit inside the box */
+.prod_in img {
+     width: 100%; /* Make sure the image scales to the width of its container */
+    height: auto; /* Set a fixed height for all images */
+    object-fit: cover;
+}
+h2{
+  font-size:20px
+}
+.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+.prod_in p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Increase line height for readability */
+    color: #333; /* Dark grey color for text */
+    margin-bottom: 10px; /* Space below each paragraph */
+    text-align: center; /* Center-align text */
+    padding: 0 10px; /* Add horizontal padding for better spacing */
+}
+
+.prod_in .price {
+    font-weight: bold; /* Make the price stand out */
+    color: #e74c3c; /* Color for the price */
+    font-size: 18px; /* Slightly larger font size for price */
+}
+
+.prod_in .description {
+    font-style: italic; /* Italicize the description text */
+    color: #555; /* Slightly lighter color for description */
+}
+
 
 </style>
   </head>
@@ -86,7 +125,7 @@
     <hr />
 
 
-<div class="container" style=" display:flex; flex-wrap:wrap; justify-content:space-between; column-gap:20px;" >
+<div class="container1" style=" display:flex; flex-wrap:wrap; justify-content:space-between; column-gap:20px;" >
   <?php include 'home.php'; ?>
 </div>
 
