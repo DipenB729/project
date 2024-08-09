@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 GadgetByte. All rights reserved.</p>
+        <p>&copy; 2024 Hamrogadget. All rights reserved.</p>
       </div>
     </footer>
 
