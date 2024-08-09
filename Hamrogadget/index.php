@@ -9,6 +9,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <title>Hamrogadget</title>
+    <style>
+.prod_in{
+ font-size: 8px;
+ font-weight: 700;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-style: none;
+ height: 310px;
+ width: 220px;
+ font-family: sans-serif;
+ }
+ p{
+   font-size: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-family: sans-serif;
+   font-weight: 600;
+   color: rgb(8, 8, 8);
+   }
+#addtocart p{
+    width: 130px;
+    text-align: center;
+    margin-left: 48px;
+    padding-top: 12px;
+    font-style: italic;
+    height: 40px;
+    background-color: rgba(228, 76, 16, 0.151);
+}
+   .prod_out{
+   display:flex;
+   flex-direction:row;
+   }
+
+</style>
   </head>
   <body>
     <div class="navbar">
@@ -53,8 +86,10 @@
     <hr />
 
 
+<div class="container" style=" display:flex; flex-wrap:wrap; justify-content:space-between; column-gap:20px;" >
+  <?php include 'home.php'; ?>
+</div>
 
-<?php include 'home.php'; ?>
 
     <div class="Payment_method">
       <h1>Payment Method</h1>
@@ -65,7 +100,6 @@
       <img src="connectips.jpeg" alt="" />
       <img src="cashondelivery1.jpg   " alt="" />
     </div>
-
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
