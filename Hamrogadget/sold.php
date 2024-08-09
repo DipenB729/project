@@ -20,12 +20,16 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output data of each row
     while($row = $result->fetch_assoc()) {
-      echo "<img src='" . $row["image"] . "' width='300' height='300' />";
-        echo "<div class='product'>";
+        echo "<div class='product-card'>";
+        echo "<div class='product-image-description'>";
+        echo "<img src='" . $row["image"] . "' alt='" . $row["name"] . "' />";
+        echo "<div class='product-description'>";
         echo "<h2>" . $row["name"] . "</h2>";
         echo "<p>" . $row["description"] . "</p>";
-        echo "<p>Price: Rs" . $row["price"] . "</p>";
-        echo "<p><a href='add_to_cart.php?item_id={$row["name"]}'>Add to Cart</a></p></a>";
+        echo "<p class='price'>Price: Rs" . $row["price"] . "</p>";
+        echo "<p><a href='add_to_cart.php?item_id={$row["name"]}' class='add-to-cart-button'>Add to Cart</a></p>";
+        echo "</div>";
+        echo "</div>";
         echo "</div>";
     }
 } else {
